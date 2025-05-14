@@ -1,11 +1,31 @@
 return {
-	{
-		"folke/tokyonight.nvim",
-		lazy = false, -- make sure we load this during startup if it is your main colorscheme
+  -- primary color scheme
+  {
+    "tsax/stellarized",
+		lazy = false, -- load the primary color scheme during startup
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
 			-- load the colorscheme here
-			vim.cmd([[colorscheme tokyonight]])
+			vim.cmd([[colorscheme stellarized]])
 		end,
+  },
+  -- additional color schemes
+  {
+    "sainnhe/everforest",
+  },
+  {
+    "morhetz/gruvbox",
+  },
+  {
+    "romainl/apprentice",
+  },
+  {
+    "nordtheme/vim",
+  },
+	{
+		"folke/tokyonight.nvim",
 	},
+  {
+    "phha/zenburn.nvim"
+  },
 }

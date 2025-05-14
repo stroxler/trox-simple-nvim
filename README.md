@@ -20,6 +20,9 @@ When you do this, note the following:
 
 ## Inspration
 
+Thanks to Heiker Curiel for [the nvim-starter]() repository, which I've found to be
+a very valuable reference for how to do simple vim configurations.
+
 Thanks to the Primagean for [his demo video](https://www.youtube.com/watch?v=w7i4amO_zaE),
 which got me started on this although I diverged pretty quickly when I realized that
 (a) I wanted to use lazy.nvim to manage packages and (b) I wanted to use the built-in
