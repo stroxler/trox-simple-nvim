@@ -28,4 +28,8 @@ return {
   {
     "phha/zenburn.nvim"
   },
+  -- nicer looking status line
+  {
+    "nvim-lualine/lualine.nvim"
+  },
 }
