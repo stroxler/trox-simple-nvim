@@ -7,6 +7,22 @@
 -- this off and on
 vim.diagnostic.config({ virtual_text = true })
 
+--
+-- A few off-the-shelf configs pulled from nvim-lspconfig as of
+-- 2025-05-15
+--
+
+vim.lsp.config.nixd = {
+  cmd = { 'nixd' },
+  filetypes = { 'nix' },
+  root_markers = { 'flake.nix', 'git' },
+}
+vim.lsp.enable({'nixd'})
+
+--
+-- pyrefly configuration
+--
+
 local python_root_dir_markers = {
   'pyproject.toml',
   -- these are hacks to make pyrefly work on conformance tests / pyrefly root dir
@@ -18,6 +34,4 @@ vim.lsp.config.pyrefly = {
   root_markers = python_root_dir_markers,
   filetypes = { 'python' }
 }
-
 vim.lsp.enable({'pyrefly'})
-
